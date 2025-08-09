@@ -10,10 +10,11 @@ from aiolimiter import AsyncLimiter
 
 # Files (absolute paths)
 BASE_DIR = "/home/shubham/Downloads/subsidy-working"
-TRANSACTIONS_JSON = os.path.join(BASE_DIR, "client_to_competitor_transactions.json")
-TIP_SUBSIDY_JSON = os.path.join(BASE_DIR, "tip_subsidy_report.json")
-TIP_SUBSIDY_CSV = os.path.join(BASE_DIR, "tip_subsidy_report.csv")
-TIP_ACCOUNTS_CACHE = os.path.join(BASE_DIR, "jito_tip_accounts.json")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+TRANSACTIONS_JSON = os.path.join(OUTPUT_DIR, "client_to_competitor_transactions.json")
+TIP_SUBSIDY_JSON = os.path.join(OUTPUT_DIR, "tip_subsidy_report.json")
+TIP_SUBSIDY_CSV = os.path.join(OUTPUT_DIR, "tip_subsidy_report.csv")
+TIP_ACCOUNTS_CACHE = os.path.join(OUTPUT_DIR, "jito_tip_accounts.json")
 
 # Addresses (keep in sync with main script)
 CLIENT_ADDRESS = "51ePnC5NJpv4MXCttjrJLPsBimBpsoH2nHi29U9QvYcT"
@@ -206,6 +207,9 @@ class TipSubsidyCalculator:
 
 
 async def main() -> None:
+    # Ensure output directory exists
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
     calc = TipSubsidyCalculator()
     try:
         calc.load_transactions()

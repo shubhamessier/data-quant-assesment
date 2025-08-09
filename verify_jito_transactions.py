@@ -14,6 +14,9 @@ import os
 JITO_MAINNET_URL = "https://mainnet.block-engine.jito.wtf"
 JITO_API_VERSION = "/api/v1"
 
+# Output directory
+OUTPUT_DIR = "/home/shubham/Downloads/subsidy-working/output"
+
 # Rate Limiting Configuration
 JITO_RATE = 1  # requests per second
 JITO_BURST = 5  # allowed burst
@@ -21,13 +24,13 @@ BATCH_SIZE = 5  # transactions to process in parallel
 BATCH_DELAY = 1.5  # seconds between batches
 
 # Worker Configuration
-NUM_WORKERS = 10  # Number of parallel workers
+NUM_WORKERS = 5  # Number of parallel workers
 
 # Input/Output Files
 TRANSACTIONS_CSV = "client_to_competitor_transactions.csv"
 TRANSACTIONS_JSON = "client_to_competitor_transactions.json"
-VERIFICATION_REPORT = "jito_verification_report.json"
-VERIFICATION_SUMMARY = "jito_verification_summary.txt"
+VERIFICATION_REPORT = os.path.join(OUTPUT_DIR, "jito_verification_report.json")
+VERIFICATION_SUMMARY = os.path.join(OUTPUT_DIR, "jito_verification_summary.txt")
 
 class JitoVerifier:
     def __init__(self):
@@ -317,6 +320,9 @@ class JitoVerifier:
 
     async def run(self):
         """Run the verification process"""
+        # Ensure output directory exists
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        
         self.start_time = datetime.now()
         self.stats["start_time"] = self.start_time.isoformat()
         print("[start] Starting Jito transaction verification...")

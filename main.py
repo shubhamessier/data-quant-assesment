@@ -4,7 +4,7 @@ import json
 import time
 from typing import Optional, List, Dict, Any
 from datetime import datetime
-from collections import deque
+import os
 
 import httpx
 from aiolimiter import AsyncLimiter
@@ -38,10 +38,11 @@ BATCH_DELAY = 0.5        # Delay between batches in seconds
 TRANSACTIONS_PER_PAGE = 100
 MAX_PAGES = 200
 
-# Output files
-CSV_FILE = "client_to_competitor_transactions.csv"
-JSON_FILE = "client_to_competitor_transactions.json"
-JITO_BUNDLES_FILE = "jito_bundles.json"
+# Output directory and files
+OUTPUT_DIR = "/home/shubham/Downloads/subsidy-working/output"
+CSV_FILE = os.path.join(OUTPUT_DIR, "client_to_competitor_transactions.csv")
+JSON_FILE = os.path.join(OUTPUT_DIR, "client_to_competitor_transactions.json")
+JITO_BUNDLES_FILE = os.path.join(OUTPUT_DIR, "jito_bundles.json")
 
 class SolanaWorker:
     def __init__(self):
@@ -58,6 +59,9 @@ class SolanaWorker:
         self.tip_accounts = []
 
     async def init_files(self):
+        # Ensure output directory exists
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        
         # Initialize CSV file with headers
         self.csv_file = open(CSV_FILE, "w", newline="")
         self.csv_writer = csv.DictWriter(self.csv_file, fieldnames=[

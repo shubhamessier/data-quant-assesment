@@ -1,7 +1,51 @@
+import os
 import requests
 import time
 import json
 import csv
+from typing import Dict, Any
+
+DUNE_BASE_URL = "https://api.dune.com/api/v1"
+DUNE_API_KEY = os.getenv("DUNE_API_KEY", "")
+
+HEADERS = {"X-Dune-API-Key": DUNE_API_KEY}
+
+RATE_LIMIT_BACKOFF_SECONDS = 2
+MAX_BACKOFF_SECONDS = 60
+
+
+def require_api_key():
+    if not DUNE_API_KEY:
+        raise RuntimeError(
+            "DUNE_API_KEY environment variable is not set. Export it first, e.g.\n"
+            "  export DUNE_API_KEY=\"<your_api_key>\""
+        )
+
+
+def dune_post(path: str, payload: Dict[str, Any]) -> requests.Response:
+    url = f"{DUNE_BASE_URL}{path}"
+    backoff = RATE_LIMIT_BACKOFF_SECONDS
+    while True:
+        res = requests.post(url, headers=HEADERS, json=payload)
+        if res.status_code in (429, 502, 503):
+            # rate-limited or transient error — backoff and retry
+            time.sleep(backoff)
+            backoff = min(backoff * 2, MAX_BACKOFF_SECONDS)
+            continue
+        return res
+
+
+def dune_get(path: str) -> requests.Response:
+    url = f"{DUNE_BASE_URL}{path}"
+    backoff = RATE_LIMIT_BACKOFF_SECONDS
+    while True:
+        res = requests.get(url, headers=HEADERS)
+        if res.status_code in (429, 502, 503):
+            time.sleep(backoff)
+            backoff = min(backoff * 2, MAX_BACKOFF_SECONDS)
+            continue
+        return res
+
 
 # Load wallets
 with open("wallets.json", "r") as f:
@@ -9,10 +53,6 @@ with open("wallets.json", "r") as f:
 
 SOURCE = wallets["source_wallets"][0]
 TARGET = wallets["target_wallets"][0]
-
-# Your Dune API key
-DUNE_API_KEY = "YOUR_DUNE_API_KEY"  # <-- put your API key here
-DUNE_BASE_URL = "https://api.dune.com/api/v1"
 
 # SQL Query
 SQL_QUERY = f"""
@@ -54,35 +94,51 @@ ORDER BY
   timestamp DESC
 """
 
-def execute_dune_query(sql):
-    # Step 1: Submit query
-    res = requests.post(
-        f"{DUNE_BASE_URL}/query/",
-        headers={"X-Dune-API-Key": DUNE_API_KEY},
-        json={"query": sql, "parameters": []}
-    )
-    res.raise_for_status()
-    query_id = res.json()["query_id"]
 
-    # Step 2: Wait for execution
+def execute_dune_query(sql: str):
+    require_api_key()
+
+    # Step 1: Create a new query
+    # Docs: POST /query with {"query": <sql>}
+    create_res = dune_post("/query", {"query": sql})
+    if create_res.status_code == 403:
+        raise RuntimeError(
+            f"403 Forbidden from Dune /query. Check API key/plan. Body: {create_res.text}"
+        )
+    create_res.raise_for_status()
+    query_id = create_res.json()["query_id"]
+
+    # Step 2: Execute the query
+    # Docs: POST /query/{query_id}/execute -> returns execution_id
+    exec_res = dune_post(f"/query/{query_id}/execute", {"parameters": []})
+    if exec_res.status_code == 403:
+        raise RuntimeError(
+            f"403 Forbidden from Dune execute. Check API key/plan. Body: {exec_res.text}"
+        )
+    exec_res.raise_for_status()
+    execution_id = exec_res.json()["execution_id"]
+
+    # Step 3: Poll execution status
     while True:
-        status = requests.get(
-            f"{DUNE_BASE_URL}/query/{query_id}/status",
-            headers={"X-Dune-API-Key": DUNE_API_KEY}
-        ).json()
-        if status["state"] == "QUERY_STATE_COMPLETED":
+        status_res = dune_get(f"/execution/{execution_id}/status")
+        status_res.raise_for_status()
+        status = status_res.json()
+        state = status.get("state") or status.get("execution_state")
+        if state == "QUERY_STATE_COMPLETED":
             break
-        elif status["state"] == "QUERY_STATE_FAILED":
-            raise Exception("Query failed")
+        if state == "QUERY_STATE_FAILED":
+            raise RuntimeError(f"Dune execution failed: {status}")
         time.sleep(2)
 
-    # Step 3: Fetch results
-    result = requests.get(
-        f"{DUNE_BASE_URL}/query/{query_id}/results",
-        headers={"X-Dune-API-Key": DUNE_API_KEY}
-    ).json()
+    # Step 4: Fetch results
+    results_res = dune_get(f"/execution/{execution_id}/results")
+    results_res.raise_for_status()
+    data = results_res.json()
+    # Dune response shape: { "result": { "rows": [...] } }
+    result = data.get("result", {})
+    rows = result.get("rows", [])
+    return rows
 
-    return result["result"]["rows"]
 
 def save_to_csv(data, filename="transactions.csv"):
     if not data:
@@ -95,7 +151,14 @@ def save_to_csv(data, filename="transactions.csv"):
         writer.writerows(data)
     print(f"Saved {len(data)} rows to {filename}")
 
+
 if __name__ == "__main__":
     print("Running Dune query...")
-    data = execute_dune_query(SQL_QUERY)
-    save_to_csv(data)
+    try:
+        data = execute_dune_query(SQL_QUERY)
+        save_to_csv(data)
+    except Exception as e:
+        print(f"[error] {e}")
+        # Print a helpful hint if API key missing
+        if not DUNE_API_KEY:
+            print("Hint: export DUNE_API_KEY=\"<your_key>\"")

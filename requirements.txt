@@ -1,4 +1,4 @@
-httpx
-aiolimiter
-tenacity
-redis #optinal
+httpx==0.27.0
+aiolimiter==1.1.0
+tenacity==8.5.0
+redis==5.0.1   # optional, only if you want caching
