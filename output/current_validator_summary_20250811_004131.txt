@@ -1,0 +1,20 @@
+CURRENT VALIDATOR ANALYSIS TEST
+==================================================
+
+Analysis Time: 2025-08-11T00:41:31.708298
+Dataset: 350 transactions
+Validator Coverage: 350/350 transactions
+Unique Validators: 24
+Total Tip Volume: 0.750000 SOL
+Average Tip: 0.002143 SOL
+Success Rate: 100.0%
+
+TOP 5 VALIDATORS BY TIP VOLUME:
+1. q9XWcZ7T1wP4bW9SB4XgNNwjn... - 0.060000 SOL (28 txs)
+2. BtsmiEEvnSuUnKxqXj2PZRYpP... - 0.060000 SOL (28 txs)
+3. 245B9WFHUGuWycSXHagHXwsXG... - 0.030000 SOL (14 txs)
+4. 2Rv9npqdWE1mLPsT1r2obn3xt... - 0.030000 SOL (14 txs)
+5. 722RdWmHC5TGXBjTejzNjbc8x... - 0.030000 SOL (14 txs)
+
+CORRELATION ANALYSIS:
+• Tip Volume Vs Compute Units: 0.999
