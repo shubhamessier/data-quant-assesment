@@ -1,0 +1,69 @@
+Transaction Subsidy Analysis Report - 2025-08-10 22:05:00.376590
+============================================================
+
+Total Transactions Processed (after dedup): 2990
+Failed Transactions Count: 1411
+Average Subsidy % for Failed Transactions: nan
+
+Tip Distribution (in SOL):
+  Average Tip: 0.012889 SOL
+  Tip Variance: 5.082356e-04
+  Tip Std Dev: 0.022544
+
+Pearson Correlation (Profit vs Tip):
+  Coefficient: 0.3207
+  p-value: 1.808e-72
+
+Average Subsidy Percentage by Hour of Day:
+hour
+0.0          NaN
+1.0     1.200001
+2.0          inf
+3.0          inf
+4.0          inf
+5.0          inf
+6.0          inf
+7.0          NaN
+8.0          NaN
+9.0          NaN
+10.0         inf
+11.0         inf
+12.0         inf
+13.0         inf
+14.0         inf
+15.0         inf
+16.0         inf
+17.0         inf
+18.0         inf
+19.0         inf
+20.0         inf
+21.0         inf
+22.0         inf
+23.0         inf
+
+Average Subsidy Percentage by Weekday (0=Monday):
+weekday
+0.0         inf
+1.0         inf
+2.0         inf
+3.0         inf
+4.0         inf
+5.0         inf
+6.0    1.200003
+
+Top 10 Validators by Average Subsidy Percentage:
+Series([], )
+
+Latency Bucket Counts:
+latency_bucket
+NaN     2960
+>60s      30
+
+Sample Rows (first 5):
+                                                                                  signature  success  is_success  is_jito_bundle         slot          block_time                  ts  hour  weekday  latency_seconds_rt latency_bucket  on_chain_tip_lamports  jito_tip_lamports  profit_lamports  profit_sol  subsidy_percentage       fee  fee_lamports_final  fee_sol_final  fee_lamports_rt  compute_units  compute_units_final  compute_units_rt  tip_over_fee  tip_over_fee_rt  jito_tip_over_fee_rt  onchain_tip_per_cu  jito_tip_per_cu  fee_per_cu  cu_efficiency  tip_intensity  slot_tx_count  win5m_tx_count  win5m_program_count  slot_compute_sum  slot_congestion  tip_per_congestion  validator_identity  instruction_count                                                                                program_ids  account_count  total_positive_balance_changes  total_negative_balance_changes     slot_rpc      block_time_rpc  fee_lamports_rpc  compute_units_rpc  compute_units_rpc_new  fee_sol_rt
+0   5TcJhEYJCe7m5c34DqY5tZyKoLCNfr2YVkcrTtFmNBeZtopZ5GuZvufue2sMQsTHEvS7nFw9uvvsmDSNBjbECJv     True        True           False  359004039.0 2025-08-09 23:58:50 2025-08-09 23:58:50  23.0      5.0                 NaN            NaN                    NaN                NaN              0.0         0.0                 NaN  105000.0            105000.0       0.000105              NaN        29597.0              29597.0               NaN           NaN              NaN                   NaN                 NaN              NaN    3.547657            0.0            NaN            2.0             3.0                  6.0           59182.0         0.001233                 NaN                 NaN                3.0  675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8, ComputeBudget111111111111111111111111111111           20.0                    3.708716e+09                    3.708821e+09  359004039.0 2025-08-09 23:58:50          105000.0            29597.0                29597.0         NaN
+1  5A94scCADSe1V7ExtZSTm6AREc6f4j3J1AHBRgFmCDSvQJDZcMusGFvFLmw7yBjshUqtmNgzwGkiYjy2PJftrNAr     True        True           False  359004039.0 2025-08-09 23:58:50 2025-08-09 23:58:50  23.0      5.0             59321.0           >60s                    NaN                NaN              0.0         0.0                 NaN  105000.0            105000.0       0.000105         105000.0        29585.0              29585.0               NaN           NaN              NaN                   NaN                 NaN              NaN    3.549096            0.0            NaN            2.0             2.0                  4.0           59182.0         0.001233                 NaN                 NaN                3.0  675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8, ComputeBudget111111111111111111111111111111           20.0                    3.719097e+09                    3.719202e+09  359004039.0 2025-08-09 23:58:50          105000.0            29585.0                29585.0    0.000105
+2  5sZSRr4jLkqhmE3MtMNWiuGCn4psNN3AKcod3JWu1LNemwhSBhmuA45tFMy5MZj3AVfzscHXNXDCJvzk3xtjysqX     True        True           False  359004018.0 2025-08-09 23:58:42 2025-08-09 23:58:42  23.0      5.0                 NaN            NaN                    NaN                NaN              0.0         0.0                 NaN  505000.0            505000.0       0.000505              NaN        29626.0              29626.0               NaN           NaN              NaN                   NaN                 NaN              NaN   17.045838            0.0            NaN            1.0             1.0                  2.0           29626.0         0.000617                 NaN                 NaN                3.0  675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8, ComputeBudget111111111111111111111111111111           20.0                    7.109721e+09                    7.110226e+09  359004018.0 2025-08-09 23:58:42          505000.0            29626.0                29626.0         NaN
+3  4pHX9oC9h8WtcfzBG7jAe81EczN7pqXDuZ3XN6qYSUeWNhgBQ8UZctVnGixNRwyFcTN4ydhenY87J1VSVas48wjY    False       False           False  358999524.0 2025-08-09 23:29:27 2025-08-09 23:29:27  23.0      5.0                 NaN            NaN                    NaN                NaN              0.0         0.0                 NaN  505000.0            505000.0       0.000505              NaN        45811.0              45811.0               NaN           NaN              NaN                   NaN                 NaN              NaN   11.023553            0.0            NaN            1.0             1.0                  2.0           45811.0         0.000954                 NaN                 NaN                3.0   ComputeBudget111111111111111111111111111111, pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA           21.0                    0.000000e+00                    5.050000e+05  358999524.0 2025-08-09 23:29:27          505000.0            45811.0                45811.0         NaN
+4  2jgCoyNUrD6bWRsFFtwfb775gvoZXaRTrHJAY2phZSFH8ucBzuCQjoXAYfvRMLexAXzecdr1gNTnPKFRs72ZfVcU    False       False           False  358993849.0 2025-08-09 22:52:22 2025-08-09 22:52:22  22.0      5.0                 NaN            NaN                    NaN                NaN              0.0         0.0                 NaN  505000.0            505000.0       0.000505              NaN        47326.0              47326.0               NaN           NaN              NaN                   NaN                 NaN              NaN   10.670667            0.0            NaN            1.0             1.0                  2.0           47326.0         0.000986                 NaN                 NaN                3.0   ComputeBudget111111111111111111111111111111, pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA           21.0                    0.000000e+00                    5.050000e+05  358993849.0 2025-08-09 22:52:22          505000.0            47326.0                47326.0         NaN
+

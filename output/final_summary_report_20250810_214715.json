@@ -1,0 +1,19 @@
+{
+  "dataset_info": {
+    "total_transactions": 3352,
+    "successful_transactions": "1800",
+    "jito_bundle_transactions": "106",
+    "unique_validators": 0,
+    "date_range": {
+      "start": "2025-07-06T06:14:57",
+      "end": "2025-08-09T23:58:50"
+    }
+  },
+  "key_metrics": {
+    "avg_tip_sol": 0.012889057612244898,
+    "avg_profit_sol": -0.00011771457279236277,
+    "avg_subsidy_percentage": Infinity,
+    "success_rate": 0.5369928400954654,
+    "jito_bundle_rate": 0.03162291169451074
+  }
+}

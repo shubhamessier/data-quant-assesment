@@ -1,0 +1,112 @@
+{
+  "timestamp": "2025-08-10T22:47:38.473545",
+  "dataset_info": {
+    "total_transactions": 27,
+    "successful_transactions": 12,
+    "jito_bundle_transactions": 0,
+    "transactions_with_tips": 0,
+    "transactions_with_validators": 0,
+    "unique_validators": 0,
+    "time_span_hours": 5.2925
+  },
+  "time_patterns": {
+    "hourly_distribution": [
+      {
+        "hour": 11,
+        "on_chain_tip_sol_count": 2,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.0,
+        "subsidy_percentage_mean": NaN
+      },
+      {
+        "hour": 12,
+        "on_chain_tip_sol_count": 10,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.7,
+        "subsidy_percentage_mean": NaN
+      },
+      {
+        "hour": 13,
+        "on_chain_tip_sol_count": 5,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.0,
+        "subsidy_percentage_mean": NaN
+      },
+      {
+        "hour": 14,
+        "on_chain_tip_sol_count": 2,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.0,
+        "subsidy_percentage_mean": NaN
+      },
+      {
+        "hour": 15,
+        "on_chain_tip_sol_count": 5,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.6,
+        "subsidy_percentage_mean": NaN
+      },
+      {
+        "hour": 16,
+        "on_chain_tip_sol_count": 3,
+        "on_chain_tip_sol_mean": 0.0,
+        "on_chain_tip_sol_sum": 0.0,
+        "validator_identity_nunique": 0,
+        "is_success_mean": 0.666667,
+        "subsidy_percentage_mean": NaN
+      }
+    ],
+    "peak_activity_hour": 12,
+    "peak_tip_hour": 11
+  },
+  "success_patterns": [
+    {
+      "is_success": false,
+      "on_chain_tip_sol_count": 15,
+      "on_chain_tip_sol_mean": 0.0,
+      "on_chain_tip_sol_sum": 0.0,
+      "jito_tip_sol_mean": 0.0,
+      "jito_tip_sol_sum": 0.0,
+      "profit_sol_mean": 0.0,
+      "profit_sol_sum": 0.0,
+      "validator_identity_nunique": 0,
+      "compute_units_rpc_mean": 29027.066667,
+      "fee_sol_mean": 0.000478
+    },
+    {
+      "is_success": true,
+      "on_chain_tip_sol_count": 12,
+      "on_chain_tip_sol_mean": 0.0,
+      "on_chain_tip_sol_sum": 0.0,
+      "jito_tip_sol_mean": 0.0,
+      "jito_tip_sol_sum": 0.0,
+      "profit_sol_mean": 0.0,
+      "profit_sol_sum": 0.0,
+      "validator_identity_nunique": 0,
+      "compute_units_rpc_mean": 60720.166667,
+      "fee_sol_mean": 0.000238
+    }
+  ],
+  "tip_distribution": {
+    "mean": 0.0,
+    "median": 0.0,
+    "std": 0.0,
+    "percentiles": {
+      "25th": 0.0,
+      "75th": 0.0,
+      "90th": 0.0,
+      "95th": 0.0,
+      "99th": 0.0
+    }
+  }
+}

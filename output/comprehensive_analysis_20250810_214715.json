@@ -1,0 +1,287 @@
+{
+  "tip_distribution": {
+    "tip_stats": {
+      "count": 49.0,
+      "mean": 0.012889057612244901,
+      "std": 0.022544080910993892,
+      "min": 0.001,
+      "25%": 0.001,
+      "50%": 0.001,
+      "75%": 0.01957179,
+      "max": 0.1
+    },
+    "tip_variance": 0.0005082355841214392,
+    "tip_std": 0.022544080910993892,
+    "tip_profit_correlation": 0.5067741752303437
+  },
+  "time_patterns": {
+    "hourly_patterns": [
+      {
+        "hour": 1.0,
+        "mean": 1.2000011000508737,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "hour": 2.0,
+        "mean": Infinity,
+        "count": 3,
+        "std": 0.0
+      },
+      {
+        "hour": 3.0,
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "hour": 4.0,
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "hour": 5.0,
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "hour": 6.0,
+        "mean": Infinity,
+        "count": 3,
+        "std": 0.0
+      },
+      {
+        "hour": 10.0,
+        "mean": Infinity,
+        "count": 7,
+        "std": 0.0
+      },
+      {
+        "hour": 11.0,
+        "mean": Infinity,
+        "count": 7,
+        "std": 0.0
+      },
+      {
+        "hour": 12.0,
+        "mean": Infinity,
+        "count": 8,
+        "std": 0.0
+      },
+      {
+        "hour": 13.0,
+        "mean": Infinity,
+        "count": 10,
+        "std": 0.0
+      },
+      {
+        "hour": 14.0,
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "hour": 15.0,
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "hour": 16.0,
+        "mean": Infinity,
+        "count": 7,
+        "std": 0.0
+      },
+      {
+        "hour": 17.0,
+        "mean": Infinity,
+        "count": 9,
+        "std": 0.0
+      },
+      {
+        "hour": 18.0,
+        "mean": Infinity,
+        "count": 5,
+        "std": 0.0
+      },
+      {
+        "hour": 19.0,
+        "mean": Infinity,
+        "count": 9,
+        "std": 0.0
+      },
+      {
+        "hour": 20.0,
+        "mean": Infinity,
+        "count": 2,
+        "std": 0.0
+      },
+      {
+        "hour": 21.0,
+        "mean": Infinity,
+        "count": 5,
+        "std": 0.0
+      },
+      {
+        "hour": 22.0,
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "hour": 23.0,
+        "mean": Infinity,
+        "count": 6,
+        "std": 0.0
+      }
+    ],
+    "daily_patterns": [
+      {
+        "date": "2025-07-12",
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-14",
+        "mean": Infinity,
+        "count": 3,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-16",
+        "mean": Infinity,
+        "count": 10,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-17",
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-19",
+        "mean": Infinity,
+        "count": 13,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-22",
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-23",
+        "mean": 1.2000011073665218,
+        "count": 4,
+        "std": 2.2147330413872326e-06
+      },
+      {
+        "date": "2025-07-26",
+        "mean": Infinity,
+        "count": 2,
+        "std": 0.0
+      },
+      {
+        "date": "2025-07-31",
+        "mean": Infinity,
+        "count": 22,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-01",
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-02",
+        "mean": Infinity,
+        "count": 4,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-03",
+        "mean": 1.2000026568852462,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-04",
+        "mean": Infinity,
+        "count": 6,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-05",
+        "mean": Infinity,
+        "count": 13,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-06",
+        "mean": Infinity,
+        "count": 8,
+        "std": 0.0
+      },
+      {
+        "date": "2025-08-07",
+        "mean": Infinity,
+        "count": 7,
+        "std": 0.0
+      }
+    ],
+    "weekday_patterns": [
+      {
+        "weekday": 0.0,
+        "mean": Infinity,
+        "count": 9,
+        "std": 0.0
+      },
+      {
+        "weekday": 1.0,
+        "mean": Infinity,
+        "count": 14,
+        "std": 0.0
+      },
+      {
+        "weekday": 2.0,
+        "mean": Infinity,
+        "count": 22,
+        "std": 0.0
+      },
+      {
+        "weekday": 3.0,
+        "mean": Infinity,
+        "count": 33,
+        "std": 0.0
+      },
+      {
+        "weekday": 4.0,
+        "mean": Infinity,
+        "count": 1,
+        "std": 0.0
+      },
+      {
+        "weekday": 5.0,
+        "mean": Infinity,
+        "count": 20,
+        "std": 0.0
+      },
+      {
+        "weekday": 6.0,
+        "mean": 1.2000026568852462,
+        "count": 1,
+        "std": 0.0
+      }
+    ]
+  },
+  "validator_patterns": {
+    "error": "No validator identity data available"
+  },
+  "generated_at": "2025-08-10T21:59:08.751197"
+}

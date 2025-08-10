@@ -1,0 +1,479 @@
+{
+  "analysis_timestamp": "2025-08-10T22:29:46.295491",
+  "dataset_info": {
+    "total_transactions": 3352,
+    "date_range": {
+      "start": "2025-07-06T06:14:57",
+      "end": "2025-08-09T23:58:50"
+    },
+    "validator_coverage": {
+      "total_transactions": 3352,
+      "has_validator_column": true,
+      "validator_coverage": 0,
+      "unique_validators": 0,
+      "coverage_percentage": 0.0
+    }
+  },
+  "validator_analysis": {
+    "has_validator_data": false,
+    "validator_count": 0,
+    "correlations": {
+      "error": "No validator data for correlation analysis"
+    },
+    "patterns": {
+      "error": "No validator data for pattern analysis"
+    }
+  },
+  "alternative_analysis": {
+    "hourly_patterns": {
+      "data": {
+        "0": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": null,
+          "jito_tip_lamports_median": null,
+          "jito_tip_lamports_count": 0.0,
+          "subsidy_percentage_mean": null,
+          "subsidy_percentage_median": null,
+          "success_mean": 0.419048
+        },
+        "1": {
+          "on_chain_tip_lamports_mean": 62178943.0,
+          "on_chain_tip_lamports_median": 62178943.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 62925091.0,
+          "jito_tip_lamports_median": 62925091.0,
+          "jito_tip_lamports_count": 1.0,
+          "subsidy_percentage_mean": 1.200001,
+          "subsidy_percentage_median": 1.200001,
+          "success_mean": 0.459854
+        },
+        "2": {
+          "on_chain_tip_lamports_mean": 100000000.0,
+          "on_chain_tip_lamports_median": 100000000.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 47299737.0,
+          "jito_tip_lamports_median": 20477824.0,
+          "jito_tip_lamports_count": 3.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.5
+        },
+        "3": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 45114671.0,
+          "jito_tip_lamports_median": 45114671.0,
+          "jito_tip_lamports_count": 1.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.507246
+        },
+        "4": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 17116766.0,
+          "jito_tip_lamports_median": 17116766.0,
+          "jito_tip_lamports_count": 1.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.460317
+        },
+        "5": {
+          "on_chain_tip_lamports_mean": 20375057.0,
+          "on_chain_tip_lamports_median": 20375057.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 5904889.5,
+          "jito_tip_lamports_median": 1000000.0,
+          "jito_tip_lamports_count": 4.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.685484
+        },
+        "6": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 97002.0,
+          "jito_tip_lamports_median": 82057.0,
+          "jito_tip_lamports_count": 3.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.526012
+        },
+        "7": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": null,
+          "jito_tip_lamports_median": null,
+          "jito_tip_lamports_count": 0.0,
+          "subsidy_percentage_mean": null,
+          "subsidy_percentage_median": null,
+          "success_mean": 0.543478
+        },
+        "8": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": null,
+          "jito_tip_lamports_median": null,
+          "jito_tip_lamports_count": 0.0,
+          "subsidy_percentage_mean": null,
+          "subsidy_percentage_median": null,
+          "success_mean": 0.5
+        },
+        "9": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": null,
+          "jito_tip_lamports_median": null,
+          "jito_tip_lamports_count": 0.0,
+          "subsidy_percentage_mean": null,
+          "subsidy_percentage_median": null,
+          "success_mean": 0.582418
+        },
+        "10": {
+          "on_chain_tip_lamports_mean": 1000000.0,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 3.0,
+          "on_chain_tip_lamports_std": 0.0,
+          "jito_tip_lamports_mean": 11738494.857143,
+          "jito_tip_lamports_median": 1012000.0,
+          "jito_tip_lamports_count": 7.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.520833
+        },
+        "11": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 3553260.857143,
+          "jito_tip_lamports_median": 1000000.0,
+          "jito_tip_lamports_count": 7.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.654088
+        },
+        "12": {
+          "on_chain_tip_lamports_mean": 1000000.0,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 8.0,
+          "on_chain_tip_lamports_std": 0.0,
+          "jito_tip_lamports_mean": 5110916.5,
+          "jito_tip_lamports_median": 1012000.0,
+          "jito_tip_lamports_count": 8.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": 1.2,
+          "success_mean": 0.523077
+        },
+        "13": {
+          "on_chain_tip_lamports_mean": 1000000.0,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 9.0,
+          "on_chain_tip_lamports_std": 0.0,
+          "jito_tip_lamports_mean": 1011790.0,
+          "jito_tip_lamports_median": 1012000.0,
+          "jito_tip_lamports_count": 10.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": 1.2,
+          "success_mean": 0.54717
+        },
+        "14": {
+          "on_chain_tip_lamports_mean": 29373629.666667,
+          "on_chain_tip_lamports_median": 24445196.0,
+          "on_chain_tip_lamports_count": 3.0,
+          "on_chain_tip_lamports_std": 31131814.443791,
+          "jito_tip_lamports_mean": 6646024.75,
+          "jito_tip_lamports_median": 868244.5,
+          "jito_tip_lamports_count": 4.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.6
+        },
+        "15": {
+          "on_chain_tip_lamports_mean": 20006963.0,
+          "on_chain_tip_lamports_median": 20006963.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 10375865.25,
+          "jito_tip_lamports_median": 10083243.0,
+          "jito_tip_lamports_count": 4.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.506849
+        },
+        "16": {
+          "on_chain_tip_lamports_mean": 19888774.0,
+          "on_chain_tip_lamports_median": 20554378.0,
+          "on_chain_tip_lamports_count": 5.0,
+          "on_chain_tip_lamports_std": 22456377.084154,
+          "jito_tip_lamports_mean": 14690183.0,
+          "jito_tip_lamports_median": 1014100.0,
+          "jito_tip_lamports_count": 7.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": 1.600001,
+          "success_mean": 0.732601
+        },
+        "17": {
+          "on_chain_tip_lamports_mean": 1000000.0,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 2.0,
+          "on_chain_tip_lamports_std": 0.0,
+          "jito_tip_lamports_mean": 606853.777778,
+          "jito_tip_lamports_median": 1009900.0,
+          "jito_tip_lamports_count": 9.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.557522
+        },
+        "18": {
+          "on_chain_tip_lamports_mean": 1000000.0,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 4.0,
+          "on_chain_tip_lamports_std": 0.0,
+          "jito_tip_lamports_mean": 1235942.0,
+          "jito_tip_lamports_median": 1012000.0,
+          "jito_tip_lamports_count": 5.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": 1.2,
+          "success_mean": 0.512195
+        },
+        "19": {
+          "on_chain_tip_lamports_mean": 5969259.666667,
+          "on_chain_tip_lamports_median": 1000000.0,
+          "on_chain_tip_lamports_count": 6.0,
+          "on_chain_tip_lamports_std": 7775709.431005,
+          "jito_tip_lamports_mean": 12626209.0,
+          "jito_tip_lamports_median": 14347915.0,
+          "jito_tip_lamports_count": 9.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.50365
+        },
+        "20": {
+          "on_chain_tip_lamports_mean": 19571790.0,
+          "on_chain_tip_lamports_median": 19571790.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 32902970.5,
+          "jito_tip_lamports_median": 32902970.5,
+          "jito_tip_lamports_count": 2.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.44898
+        },
+        "21": {
+          "on_chain_tip_lamports_mean": 41637891.0,
+          "on_chain_tip_lamports_median": 41637891.0,
+          "on_chain_tip_lamports_count": 1.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 17519608.8,
+          "jito_tip_lamports_median": 1000000.0,
+          "jito_tip_lamports_count": 5.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.396341
+        },
+        "22": {
+          "on_chain_tip_lamports_mean": null,
+          "on_chain_tip_lamports_median": null,
+          "on_chain_tip_lamports_count": 0.0,
+          "on_chain_tip_lamports_std": null,
+          "jito_tip_lamports_mean": 13724711.25,
+          "jito_tip_lamports_median": 1000000.0,
+          "jito_tip_lamports_count": 4.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.366972
+        },
+        "23": {
+          "on_chain_tip_lamports_mean": 39470954.0,
+          "on_chain_tip_lamports_median": 24794142.0,
+          "on_chain_tip_lamports_count": 3.0,
+          "on_chain_tip_lamports_std": 31618093.036401,
+          "jito_tip_lamports_mean": 11863198.333333,
+          "jito_tip_lamports_median": 9572163.0,
+          "jito_tip_lamports_count": 6.0,
+          "subsidy_percentage_mean": Infinity,
+          "subsidy_percentage_median": Infinity,
+          "success_mean": 0.377358
+        }
+      },
+      "peak_tip_hour": 2,
+      "peak_volume_hour": 13
+    },
+    "top_slot_ranges": {
+      "357292300": {
+        "on_chain_tip_lamports_mean": 100000000.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 100000000.0,
+        "jito_tip_lamports_mean": 101200000.0,
+        "jito_tip_lamports_sum": 101200000.0,
+        "subsidy_percentage_mean": 1.2,
+        "success_mean": 0.6,
+        "compute_units_final_mean": null
+      },
+      "357044200": {
+        "on_chain_tip_lamports_mean": 75760132.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 75760132.0,
+        "jito_tip_lamports_mean": null,
+        "jito_tip_lamports_sum": 0.0,
+        "subsidy_percentage_mean": null,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "354351500": {
+        "on_chain_tip_lamports_mean": 62675693.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 62675693.0,
+        "jito_tip_lamports_mean": null,
+        "jito_tip_lamports_sum": 0.0,
+        "subsidy_percentage_mean": null,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "357278400": {
+        "on_chain_tip_lamports_mean": 62178943.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 62178943.0,
+        "jito_tip_lamports_mean": 62925091.0,
+        "jito_tip_lamports_sum": 62925091.0,
+        "subsidy_percentage_mean": 1.200001,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "357413100": {
+        "on_chain_tip_lamports_mean": 55973190.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 55973190.0,
+        "jito_tip_lamports_mean": 56644869.0,
+        "jito_tip_lamports_sum": 56644869.0,
+        "subsidy_percentage_mean": 1.200001,
+        "success_mean": 1.0,
+        "compute_units_final_mean": 92649.0
+      },
+      "357023400": {
+        "on_chain_tip_lamports_mean": 41637891.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 41637891.0,
+        "jito_tip_lamports_mean": 42137546.0,
+        "jito_tip_lamports_sum": 42137546.0,
+        "subsidy_percentage_mean": 1.200001,
+        "success_mean": 1.0,
+        "compute_units_final_mean": 40371.0
+      },
+      "358352300": {
+        "on_chain_tip_lamports_mean": 24794142.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 24794142.0,
+        "jito_tip_lamports_mean": 25190849.0,
+        "jito_tip_lamports_sum": 25190849.0,
+        "subsidy_percentage_mean": 1.600003,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "358050300": {
+        "on_chain_tip_lamports_mean": 24445196.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 24445196.0,
+        "jito_tip_lamports_mean": 24836320.0,
+        "jito_tip_lamports_sum": 24836320.0,
+        "subsidy_percentage_mean": 1.600004,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "358500400": {
+        "on_chain_tip_lamports_mean": 20916302.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 20916302.0,
+        "jito_tip_lamports_mean": 21250963.0,
+        "jito_tip_lamports_sum": 21250963.0,
+        "subsidy_percentage_mean": 1.600001,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      },
+      "358072000": {
+        "on_chain_tip_lamports_mean": 20554378.0,
+        "on_chain_tip_lamports_count": 1.0,
+        "on_chain_tip_lamports_sum": 20554378.0,
+        "jito_tip_lamports_mean": 20883249.0,
+        "jito_tip_lamports_sum": 20883249.0,
+        "subsidy_percentage_mean": 1.600005,
+        "success_mean": 1.0,
+        "compute_units_final_mean": null
+      }
+    },
+    "success_vs_tips": {
+      "False": {
+        "on_chain_tip_lamports_mean": null,
+        "on_chain_tip_lamports_median": null,
+        "on_chain_tip_lamports_count": 0.0,
+        "on_chain_tip_lamports_std": null,
+        "jito_tip_lamports_mean": null,
+        "jito_tip_lamports_median": null,
+        "subsidy_percentage_mean": null,
+        "subsidy_percentage_median": null,
+        "compute_units_final_mean": 24353.535545,
+        "compute_units_final_median": 24293.0,
+        "fee_lamports_final_mean": 1042534.599024,
+        "fee_lamports_final_median": 1005000.0
+      },
+      "True": {
+        "on_chain_tip_lamports_mean": 12889057.612245,
+        "on_chain_tip_lamports_median": 1000000.0,
+        "on_chain_tip_lamports_count": 49.0,
+        "on_chain_tip_lamports_std": 22544080.910994,
+        "jito_tip_lamports_mean": 9680595.009434,
+        "jito_tip_lamports_median": 1012000.0,
+        "subsidy_percentage_mean": Infinity,
+        "subsidy_percentage_median": Infinity,
+        "compute_units_final_mean": 46584.134948,
+        "compute_units_final_median": 29767.0,
+        "fee_lamports_final_mean": 339496.752111,
+        "fee_lamports_final_median": 105000.0
+      }
+    },
+    "tip_distribution": {
+      "total_transactions": 49,
+      "mean_tip_lamports": 12889057.612244898,
+      "median_tip_lamports": 1000000.0,
+      "std_tip_lamports": 22544080.910993896,
+      "percentiles": {
+        "10th": 1000000.0,
+        "25th": 1000000.0,
+        "75th": 19571790.0,
+        "90th": 44504950.80000004,
+        "95th": 62476993.0,
+        "99th": 88364863.35999991
+      }
+    }
+  },
+  "key_findings": [
+    "No validator identity data available in current dataset",
+    "Performed alternative time-based and slot-based analysis",
+    "Dataset spans 3352 transactions"
+  ],
+  "recommendations": [
+    "Use a smaller time range (2-6 hours) to enable validator identity mapping",
+    "Focus on tip distribution and time-based patterns for current analysis",
+    "Consider the slot-based patterns as a proxy for validator performance"
+  ]
+}

@@ -1,0 +1,17 @@
+VALIDATOR ANALYSIS SUMMARY
+==================================================
+
+Analysis Date: 2025-08-10T22:29:46.295491
+Total Transactions: 3,352
+Validator Coverage: 0.0%
+Unique Validators: 0
+
+KEY FINDINGS:
+• No validator identity data available in current dataset
+• Performed alternative time-based and slot-based analysis
+• Dataset spans 3352 transactions
+
+RECOMMENDATIONS:
+• Use a smaller time range (2-6 hours) to enable validator identity mapping
+• Focus on tip distribution and time-based patterns for current analysis
+• Consider the slot-based patterns as a proxy for validator performance

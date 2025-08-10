@@ -1,0 +1,7 @@
+validator_identity,on_chain_tip_sol_count,on_chain_tip_sol_mean,on_chain_tip_sol_median,on_chain_tip_sol_sum,fee_sol_mean,fee_sol_sum,compute_units_rpc_mean,compute_units_rpc_sum,tip_per_cu_mean,tip_per_cu_median,fee_per_cu_mean,fee_per_cu_median,latency_seconds_mean,latency_seconds_min,latency_seconds_max,success_rpc_mean,success_rpc_sum,instruction_count_mean,accounts_count_mean,tip_volume_rank,efficiency_rank,success_rank
+7Zm1pE4FubFYZDyAQ5Labh3A4cxDcvve1s3WCRgEAZ84,12,0.001667,0.002,0.02,7e-06,8.4e-05,60000.0,720000,39.74359,39.74359,0.116278,0.116667,5.4,4.8,6.0,1.0,12,4.0,12.0,1.0,1.0,1.0
+9FXD1NXrK6xFU8i4gLAgjj2iMEWTqJhSuQN8tQuDfm2e,12,0.001667,0.002,0.02,7e-06,8.4e-05,60000.0,720000,39.74359,39.74359,0.116278,0.116667,3.8,3.2,4.4,1.0,12,4.0,12.0,1.0,1.0,1.0
+GMag1aGPi4Qi7FYNYi9HnAaktSRiWvZ6At3UWruuhEcL,12,0.001667,0.002,0.02,7e-06,8.4e-05,60000.0,720000,39.74359,39.74359,0.116278,0.116667,2.2,1.6,2.8,1.0,12,4.0,12.0,1.0,1.0,1.0
+PAD9aPiKJGcbGxuVLbc8o4Vf65GPq3fJQ7PkHWuX6a8,12,0.001667,0.002,0.02,7e-06,8.4e-05,60000.0,720000,39.74359,39.74359,0.116278,0.116667,7.0,6.4,7.6,1.0,12,4.0,12.0,1.0,1.0,1.0
+aXiomFkk6VzXaBhPuhMqTLZZguCFzzbyP9LTtZ7ZHLQ,9,0.001667,0.002,0.015,7e-06,6.3e-05,60000.0,540000,39.74359,39.74359,0.116278,0.116667,0.8,0.4,1.2,1.0,9,4.0,12.0,2.0,1.0,1.0
+CwyVpfmfSiMeCexi3JgUNvaiDfYN14cLDjzT99zcBuD2,3,0.001667,0.002,0.005,7e-06,2.1e-05,60000.0,180000,39.74359,39.74359,0.116278,0.116667,8.0,8.0,8.0,1.0,3,4.0,12.0,3.0,1.0,1.0

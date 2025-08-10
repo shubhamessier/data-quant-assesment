@@ -1,0 +1,15 @@
+RECENT VALIDATOR ANALYSIS SUMMARY
+==================================================
+
+Analysis Time: 2025-08-10T22:47:38.473545
+Dataset: 27 transactions
+Time Span: 5.29 hours
+Success Rate: 44.4%
+Jito Bundle Rate: 0.0%
+Validator Coverage: 0.0%
+Unique Validators: 0
+
+TIP STATISTICS:
+Mean: 0.000000 SOL
+Median: 0.000000 SOL
+95th percentile: 0.000000 SOL
